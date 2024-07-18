@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/*Landing Page*/
+.landing-page-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../assets/space.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.intro-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(177, 97, 0);
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro-text h1 span {
+    font-weight: 400;
+    letter-spacing: 25px;
+    color: bisque;
+    text-shadow: 8px 6px 2px rgb(177, 97, 0);
+    font-weight: 600;
+}
+
+.intro-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(255, 229, 197);
+    margin-top: -60px;
+    letter-spacing: 8px;
+    margin-top: 5px;
+}
+
+.login-btn {
+    margin-top: -850px;
+    font-size: 25px;
+    margin-right: -750px;
+    font-weight: 600;
+}
+
+.login-btn a {
+    transition: all 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.login-btn a:hover {
+    transform: scale(1.1);
+    color: rgb(248, 218, 49);
+}
+
+@media (max-width: 768px) {
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+    .intro-text p {
+        font-size: 12px;
+        margin-top: -30px;
+    }
+    .login-btn {
+        margin-top: -500px;
+        margin-right: -400px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-text h1 {
+        font-size: 1.5rem;
+    }
+    .intro-text p {
+        font-size: 10px;
+        margin-top: -20px;
+    }
+    .login-btn {
+        margin-top: -300px;
+        margin-right: -200px;
+        font-size: 14px;
+    }
+}
+

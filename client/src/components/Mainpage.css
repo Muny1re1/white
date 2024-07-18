@@ -1,0 +1,158 @@
+/* Main Page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.sidebar{
+    width: 100px;
+    background: radial-gradient(circle at center, #462a02, #2b1901, #0d0804);
+    color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-right: 2px var(--bg-black-50);
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.nav-links li {
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+.nav-links a
+{
+    border: none;
+    margin-left: -2px;
+    text-decoration: none;
+    color: rgb(255, 175, 84);
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transition: all.3s ease-in-out;
+}
+
+button
+{
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    margin-left: 15px;
+    color: rgb(255, 175, 84);
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transition: all.3s ease-in-out;
+}
+
+.nav-links a:hover,
+button:hover
+{
+    transform: scale(1.09);
+    color: #fd9400;
+}
+
+.nav-links a::after,
+.logout-btn button::after
+{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fd9400;
+    opacity: 0;
+    transition: all.3s ease-in-out;
+}
+
+.nav-links a:hover::after,
+.logout-btn button:hover::after 
+{
+    opacity: 1;
+}
+
+
+.nav-links a .login-btn {
+    position: relative;
+  }
+  
+  .nav-links a .login-btn:hover::after {
+    content: attr(title);
+    position: absolute;
+  }
+  
+  .nav-links a .login-btn:hover::after {
+    opacity: 1;
+  }
+
+
+/*Main Content*/
+.main-content{
+    margin-left: 100px;
+    background: url(../assets/back.png);
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.nav-top{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bell{
+    font-size: 35px;
+    color: #ff9500;
+    margin-left: 1650px;
+}
+
+.logo{
+    margin-left: 700px;
+    margin-top: 20px;
+}
+
+.logo img{
+    width: 35%;
+}
+
+.clubs-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.blurred {
+    filter: blur(5px);
+    pointer-events: none;
+  }
+
