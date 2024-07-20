@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.club-profile{
+    top: 0;
+    display: flex;
+    flex-direction: wrap;
+    padding: 25px;
+    height: auto;
+    background: url(../assets/back.png);
+    background-size: cover;
+}
+
+.content{
+    margin-left: 200px;
+    padding: 35px;
+    width: 900px;
+    background: transparent;
+    border: 0.2px solid black;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+}
+
+.club-details{
+    align-items: center;
+    padding: 25px;
+    width: 700px;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 350px;
+    margin-left: 50px;
+}
+
+.club-details h1{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgb(255, 179, 79);
+}
+
+.club-details p{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(253, 239, 225);
+}
+
+.fa-arrow-left-long{
+    margin-top: 50px;
+    margin-left: 270px;
+    font-size: 45px;
+    color: rgb(255, 179, 79);
+}
+
+.club-events,
+.club-notifications
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.club-events h2,
+.club-notifications h2
+{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgb(255, 146, 3);
+}
+
+.club-events ul,
+.club-notifications ul
+{
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    color: bisque;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.btn-join{
+    display: none;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background: radial-gradient(circle at center, #462a02, #2b1901, #0d0804);
+    color: wheat;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all.3s ease-in-out;
+    margin-left: 600px;
+    margin-top: 240px;
+}
+
+.btn-join:hover{
+    border: none;
+    background: radial-gradient(circle, rgb(250, 240, 184), rgb(255, 193, 112));
+    color: #0d0804;
+    font-size: 20px;
+    font-weight: 600;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.btn-leave{
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background: radial-gradient(circle at center, #462a02, #2b1901, #0d0804);
+    color: wheat;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all.3s ease-in-out;
+    margin-left: 40px;
+}
+
+.btn-leave:hover{
+    border: none;
+    background: radial-gradient(circle, rgb(247, 5, 5), rgb(247, 134, 134));
+    color: #0d0804;
+    font-size: 20px;
+    font-weight: 600;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.logo1 img{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.addformm{
+    margin-left: 740px;
+    width: 60px;
+    padding: 10px;
+    border-right: 3px solid rgb(240, 178, 136);
+    border-bottom: 3px solid rgb(240, 178, 136);
+    border-top: none;
+    border-left: none;
+    border-radius: 10px;
+    transition: all.3s ease-in-out;
+}
+
+.addformm:hover{
+    border-top: 2px solid rgb(240, 178, 136);
+    border-left: 2px solid rgb(240, 178, 136);
+    border-right: none;
+    border-bottom: none;
+    color: #ff7300;
+    font-size: 20px;
+    font-weight: 600;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.toolbox 
+{
+    margin-left: 320px;
+    margin-right: 340px;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toolbox button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .toolbox button:hover {
+    background-color: #eee;
+  }
+  
+  .delete-btn {
+    color: #eb2401;
+  }
+  
+  .edit-btn {
+    color: #33cc33;
+  }
+  .toolbox i {
+    font-size: 18px;
+  }
+
+  .club-events h2,
+  .club-notifications h2 
+  {
+    display: flex;
+    align-items: center;
+  }
+
+  .club-notifications h2 span.add-btn{
+    margin-left: 300px;
+  }
+
+  .club-events h2 span.add-btn{
+    margin-left: 540px;
+  }
+  
+  .club-events h2 span.add-btn,
+  .club-notifications h2 span.add-btn
+  {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-size: 45px;
+  }
+
+  .club-events h2 span.add-btn a,
+  .club-notifications h2 span.add-btn a{
+    color: #8ac9ff;
+    transition: all.3s ease-in-out;
+  }
+
+  .club-events h2 span.add-btn a:hover,
+  .club-notifications h2 span.add-btn a:hover{
+    color: #f79000;
+    transform: scale(1.09);
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 35px;
+    background: radial-gradient(circle at center, #462a02, #2b1901, #0d0804);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .toolbox {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .toolbox button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* For tablets and larger screens */
+@media (max-width: 1024px) {
+    .club-profile {
+      flex-direction: column;
+      padding: 15px;
+      height: auto;
+    }
+  
+    .content {
+      margin-left: 0;
+      width: 100%;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  
+    .club-details {
+      width: 100%;
+      margin: 0 auto;
+      padding: 15px;
+    }
+  
+    .btn-join, .btn-leave {
+      margin-left: 0;
+      margin-right: 0;
+      width: 80%;
+      margin-top: 20px;
+    }
+  
+    .toolbox {
+      margin-left: 0;
+      margin-right: 0;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .club-events h2 span.add-btn,
+    .club-notifications h2 span.add-btn {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 768px) {
+    .club-profile {
+      padding: 10px;
+      height: auto;
+    }
+  
+    .content {
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
+    }
+  
+    .club-details {
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+  
+    .club-details h1 {
+      font-size: 40px;
+    }
+  
+    .club-details p {
+      font-size: 16px;
+    }
+  
+    .btn-join, .btn-leave {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .fa-arrow-left-long {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .club-events,
+    .club-notifications {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .club-events h2,
+    .club-notifications h2 {
+      font-size: 40px;
+    }
+  
+    .club-events ul,
+    .club-notifications ul {
+      font-size: 16px;
+    }
+  
+    .toolbox {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .content {
+      padding: 10px;
+    }
+  
+    .club-details h1 {
+      font-size: 30px;
+    }
+  
+    .club-details p {
+      font-size: 14px;
+    }
+  
+    .club-events h2,
+    .club-notifications h2 {
+      font-size: 30px;
+    }
+  
+    .club-events ul,
+    .club-notifications ul {
+      font-size: 14px;
+    }
+  }
+  
